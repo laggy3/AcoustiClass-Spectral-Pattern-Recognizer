@@ -1,0 +1,65 @@
+# =========================================================
+# .gitignore - Music Genre Classification (MATLAB / DSP)
+# =========================================================
+
+# ---- MATLAB autosave & backup files ----
+*.asv
+*.autosave
+*.m~
+*~
+
+# ---- MATLAB code generation / Simulink artifacts ----
+codegen/
+slprj/
+_slprj/
+*.slxc
+*.slx.autosave
+*.slx.original
+sccprj/
+
+# ---- Compiled MEX binaries (platform specific) ----
+*.mexa64
+*.mexw64
+*.mexw32
+*.mexmaci64
+*.mexglx
+
+# ---- MATLAB App Designer backups ----
+*.mlapp.bak
+
+# ---- Generated figures / plots ----
+*.fig
+results/figures/*.png
+results/figures/*.jpg
+results/figures/*.fig
+!results/figures/.gitkeep
+
+# ---- Generated summary / log outputs ----
+results/*.csv
+results/logs/*.log
+results/logs/*.txt
+!results/logs/.gitkeep
+
+# ---- Heavy audio datasets (do not version large binary WAV files) ----
+data/raw/*.wav
+data/raw/*.mp3
+data/processed/*.wav
+data/processed/*.mp3
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ---- MATLAB workspace / session files ----
+*.mat
+history.m
+
+# ---- OS / editor junk ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# ---- MATLAB Add-On / project cache ----
+resources/project/
+*.prj.bak
